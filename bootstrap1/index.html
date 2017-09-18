@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		
+		<style type="text/css">
+			
+			.wrap{
+      position:relative;
+      width:200px;
+      left:50px;
+      top:50px;
+    }
+    ul{
+      padding:15px 0;
+      margin:9px;
+      list-style:none;
+      background:#6c6669;
+      color:#fff;
+      border-right-width:0;
+    }
+    li{
+      display:block;
+      height:70px;
+      line-height:40px;
+      padding-left:12px;
+      cursor:pointer;
+      font-size:15px;
+      position:relative;
+    }
+    li.active{
+      background:#999395;
+    }
+    li span:hover{
+      color:#c81623;
+    }
+    .none{
+      display:none;
+    }
+    #sub{
+      width:600px;
+      position:absolute;
+      border:1px solid #f7f7f7;
+      background:#f7f7f7;
+      box-shadow:2px 0 5px rgba(0,0,0,.3);
+      left:200px;
+      top:0;
+      box-sizing:border-box;
+      margin:0;
+      padding:10px;
+    }
+    .sub_content a{
+      font-size:12px;
+      color:#666;
+      text-decoration:none;
+    }
+    .sub_content dd a{
+      border-left:1px solid #e0e0e0;
+      padding:0 10px;
+      margin:4px 0;
+    }
+    .sub_content dl{
+      overflow:hidden;
+    }
+    .sub_content dt{
+      float:left;
+      width:70px;
+      font-weight:bold;
+      clear:left;
+      position:relative;
+    }
+    .sub_content dd{
+      
+      float:left;
+      margin-left:5px;
+      height:18px;
+      border-top:1px solid #eee;
+      margin-bottom:5px;
+    }
+    .sub_content dt i{
+      width:4px;
+      height:14px;
+      font:400 9px/14px consolas;
+      /*粗细 font-size line-height: 字体*/
+      position:absolute;
+      right:5px;
+      top:5px;
+    }	
+		}
+			
+		</style>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/function.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div class="container-fluid">
+			<div class="row" >
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="wrap" id="test" style="z-index: 1000">
+    <ul>
+	    <li data-id="a" >
+	      <span >家用电器</span>
+	    </li>
+	    <li data-id="b">
+	      <span>家用电器</span>
+	    </li>
+	    <li data-id="c">
+	      <span>家用电器</span>
+	    </li>
+	    <li data-id="d">
+	      <span>家用电器</span>
+	    </li>
+	    <li data-id="e">
+	      <span>家用电器</span>
+	    </li>
+    </ul>
+  <div id="sub" class="none">
+    <div id="a" class="sub_content none">
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+      </dl>
+    </div>
+    <div id="b" class="sub_content none">
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+          <a href="#">合资品牌</a>
+
+        </dd>
+      </dl>
+    </div>
+    <div id="c" class="sub_content none">
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+          <a href="#">合资品牌</a>
+
+        </dd>
+      </dl>
+    </div>
+    <div id="d" class="sub_content none">
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+          <a href="#">合资品牌</a>
+
+        </dd>
+      </dl>
+    </div>
+    <div id="e" class="sub_content none">
+      <dl>
+        <dt>
+          <a href="#">电视<i>&gt;</i></a>
+        </dt>
+        <dd>
+          <a href="#">合资品牌</a>
+          <a href="#">合资品牌</a>
+          <a href="#">国产品牌</a>
+          <a href="#">互联网品牌</a>
+          <a href="#">合资品牌</a>
+
+        </dd>
+      </dl>
+    </div>
+  </div><!-- sub完 -->
+</div><!-- wrap完 -->
+					
+					
+					
+					
+				</div>
+				<div class="col-md-7" >
+					<!--
+            	
+            	描述：data-interval="1000" 毫秒单位可以更改轮播的速度；
+            -->
+			<div id="carousel-example-generic" class="carousel slide " data-ride="carousel" data-interval="2000" style="margin-top: 59px;"> 
+				<!-- 链接 -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+
+				<!-- 图片位置 -->
+				<div class="carousel-inner" role="listbox" >
+
+					<div class="item active" >
+						<img src="img/4.jpg" style="width: 100%;height: 333px;" >  <!-- 图片大小也要修改 -->
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+
+					<div class="item" >
+						<img src="img/3.jpg" style="width: 100%;height: 333px;">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+
+					<div class="item " >
+						<img src="img/10.jpg" style="width: 100%;height: 333px;">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					
+					<div class="item" >
+						<img src="img/5.jpg" style="width: 100%;height: 333px;">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+					
+					<div class="item" >
+						<img src="img/7.jpg" style="width: 100%;height: 333px;">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+
+				</div>
+
+				<!--箭头控制 -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+	
+				</div>
+			<div class="col-md-1"></div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
